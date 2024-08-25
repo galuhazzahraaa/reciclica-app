@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pickup-call',
@@ -8,12 +8,14 @@ import { Route, Router } from '@angular/router';
 })
 export class PickupCallPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
+    // Initialize any logic needed on component initialization
   }
 
   newPickupCall() {
     this.router.navigate(['home']);
   }
+
 }
